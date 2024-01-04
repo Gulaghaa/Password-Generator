@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./generator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&family=Tomorrow:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e846fb3cdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="screen_main">
+            <div class="screen"></div>
+            <div class="div_i"><i class="fa fa-refresh" style="font-size:24px"></i></div>
+            <div class="power">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <button class="copy_pass"><div class="triangle"></div>Copy Password_<img src="./generator.png" class="png"></button>
+        <div class="main">
+            <div id="selectValue"></div>
+            <input type="range" min="1" max="13" value="1" step="1">
+        </div>
+        <div class="input">
+            <div class="line_1">
+                <div>
+                    <input type="checkbox" class="uppercase boxes" id="input1">
+                    <label for="input1">Uppercase Letters</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="numbers boxes" id="input2">
+                    <label for="input2">Numbers</label>
+                </div>
+
+            </div>
+
+            <div class="line_2">
+                <div>
+                    <input type="checkbox" class="lowercase boxes" id="input3">
+                    <label for="input3">Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="symbols boxes" id="input4">
+                    <label for="input4">Symbols</label>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="ask">
+        <div class="question">Are you sure to clear history?</div>
+        <div class="buttons">
+            <div class="yes">Yes</div>
+            <div class="no">No</div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="text">PASSWORD HISTORY</div>
+        <div class="history">
+
+        </div>
+        <div class="clear">Clear History</div>
+    </div>
+
+    <script src="./generator.js"></script>
+</body>
+
+</html>

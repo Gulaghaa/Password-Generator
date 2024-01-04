@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    /* border:1px solid red; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+
+.container{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top:100px ;
+    padding-right: 5%;
+    gap:10%;
+}
+.screen_main{
+    background: rgba(0, 240, 255, 0.1);
+    border: 2px solid #00F0FF;
+
+}
+
+
+label{
+    color: white;
+}
+
+h1{
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Aureolin */
+
+    color: #F8EF00;
+
+}
+
+
+
+.screen_main{
+    display: flex;
+}
+.screen{
+    width: 80%;
+    height: 64px;
+    background: rgba(0, 240, 255, 0.1);
+    /* border: 2px solid #00F0FF; */
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+    color: yellow;
+    /* text-transform: uppercase; */
+}
+
+
+.div_i{
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 240, 255, 0.1);
+
+}
+
+.div_i i{
+    width: 100%;
+    color: rgba(0, 240, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+button{
+    width: 70%;
+    height: 64px;
+    background: #F8EF00;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Black */
+
+    color: #000000;
+}
+
+
+input[type="range"]{
+    width: 90%;
+    accent-color: yellow;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line_1,.line_2{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+}
+.line_1 >div,.line_2 >div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+label{
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+
+    /* Alabaster */
+
+    color: #FAFAFA;
+}
+
+input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    border: 1px solid yellow;
+    accent-color: yellow;
+    display:none;
+    
+}
+
+input[type="checkbox"]:checked{
+    background-color: yellow;
+    appearance: none;
+}
+
+input[type="checkbox"]+label::before{
+    content: ".";
+    color: black;
+    border: 2px solid yellow;
+    display: inline-block;
+    /* border-radius:5px; */
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+input[type="checkbox"]:checked+label::before{
+    background-color: yellow;
+    color:yellow;
+}
+
+
+#selectValue{
+    width: 8%;
+    height: 100%;
+    color:yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+   
+
+}
+.main{
+    /* padding-top: 15px; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-top: 150px;
+}
+
+.history{
+    width: 80%;
+    height: 60%;
+    overflow:auto;
+    display: flex;
+    flex-direction:column ;
+    gap:10px;
+    /* border: 1px solid red; */
+    padding-right: 22%;
+}
+
+.text{
+    width: 80%;
+    height: 60px;
+    /* border: 1px solid red; */
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+
+    color: #FAFAFA;
+
+}
+
+
+.history div{
+    width: 100%;
+    height: 40px;
+    color:white;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* border:1px solid yellow; */
+    
+}
+
+
+i{
+    color:white;
+    width: 20px;
+    height: 20px;
+}
+
+
+.power{
+    width:14%;
+    height:100%;
+    /* border: 1px solid red; */
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    background: rgba(0, 240, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.copy_pass{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    position:relative;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color:black ;
+    border-left-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    
+}
+
+.copy_pass:hover{
+    background-color: #f8f00071;
+}
+  
+
+.power>div{
+    width: 70%;
+    height: 10%;
+    background-color: #00F0FF;
+    border-radius: 3px;
+}
+
+.clear{
+    width: 80%;
+    height: 40px;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 22%;
+    align-items: center;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+
+    /* Aureolin */
+
+    color: #F8EF00;
+    /* visibility: hidden; */
+}
+
+
+.ask{
+    width: 40%;
+    position:absolute;
+    color: white;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.2em;
+
+    /* Alabaster */
+
+    color: #FAFAFA;
+
+    opacity: 0.8;
+    right: 30%;
+    display: none;
+}
+.question{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+}
+.buttons div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
